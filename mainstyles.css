@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* CSS Document */
+.col img{
+
+	width:100%;
+	
+	
+}
+.col{
+	width:32.3%;
+	float: left;
+	margin-left:1%
+}
