@@ -4,6 +4,9 @@ body{
 	margin:auto;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 }
+#body{
+	max-width: 1024px
+}
 .col img{
 	width:100%;
 	float:left;
@@ -17,8 +20,8 @@ body{
 	
 }
 
-nav li {
-	float: left;
+nav li{
+	float:left;
 	margin-bottom: 20px;
 	
 }
@@ -61,7 +64,8 @@ a{
 }
 	
 li a{
-
+	display:block;
+	text-decoration: none;
     color: black;
     text-align: center;
 	padding: 10px 12px;	
@@ -93,6 +97,7 @@ h4{
 }
 
 #herobox{
+    background-repeat: no-repeat;
 	text-align: center;
 	margin-bottom:100px;
 	height: 440px;
