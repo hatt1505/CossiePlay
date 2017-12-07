@@ -1,10 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 body{
-	max-width: 1024px;
-	margin-left: auto;
-	margin-right: auto;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+	margin:inherit;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 }
 .col img{
 	width:100%;
@@ -66,7 +64,8 @@ li a{
     color: black;
     text-align: center;
 	padding: 10px 12px;	
-	font: italic bold 12px/30px Georgia, serif;
+	font: italic 12px/30px "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size:16px
 }
 a:hover{	
 	color: #555555;
@@ -84,6 +83,7 @@ a:hover{
 
 h1{
 	text-align: center;
+	
 }
 
 h4{
@@ -104,21 +104,22 @@ h4{
 }
 
 .herobox1{
-	display: inline-block;
-	margin-left: auto;
-	margin-right: auto;
+	max-width: 1024px;
 	padding-bottom:100px;
 	margin-bottom: 0;
-	clear: right
+	text-align: center;
+
 
 }
 
 .ghost-button-thick-border {
+  display: inline-block;
   width: 200px;
   font-weight: bold;
   padding: 8px;
   color: white;
   border: 3px solid white;
+  text-align: center;
   outline: none;
   text-decoration: none;
   -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
@@ -126,18 +127,17 @@ h4{
               color 0.2s ease-out;
 	justify-content: center;
 	text-shadow: 2px 2px 4px #000000;
-	text-align: center
+		
 }
 .ghost-button-thick-border:hover{
 	color:#333;
-	text-shadow: none
+	text-shadow: none;
+
 }
 .box{
 	text-align: center;
-	margin: auto;
-	position: absolute;
-	right: 401px;
-	top: 87px;
+	margin:100px;
+	
 }
 
 .button a{
@@ -164,7 +164,6 @@ p{
 
 .col-img-left img{
 	width:90%;
-	display: block; margin-left: auto; margin-right: auto;
 }
 
 .col-img-left{
@@ -174,7 +173,6 @@ p{
 
 .col-img-right img{
 	width:90%;
-	display: block; margin-left: auto; margin-right: auto;
 		
 }
 
@@ -201,8 +199,8 @@ p{
 	border-bottom:dashed #555;}
 
 .p-2-col {
-	height:50%;
-	margin-top:70px
+	width: 50%;
+	float:right
 }
 
 table {
@@ -221,4 +219,8 @@ tr:hover {background-color:#f5f5f5;}
 #contact {
 	margin-left: auto;
 	margin-right: auto
+}
+.col ul li a{
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 12px;
 }
