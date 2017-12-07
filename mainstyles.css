@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 body{
-	margin:auto;
+	margin: inherit;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 }
 #body{
@@ -64,7 +64,6 @@ a{
 }
 	
 li a{
-	display:block;
 	text-decoration: none;
     color: black;
     text-align: center;
@@ -81,7 +80,7 @@ a:hover{
 	box-shadow: 0 5px 0 tomato;
 }
 
-#herobox h1{
+.herobox h1{
 	color:whitesmoke;
     text-shadow: 2px 2px 4px #000000;
 }
@@ -96,14 +95,15 @@ h4{
 	text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
 }
 
-#herobox{
+.herobox{
     background-repeat: no-repeat;
-	text-align: center;
-	margin-bottom:100px;
 	height: 440px;
-	background-color: antiquewhite;
-	background-image:url(images/FotorCreated2.jpg);
-	background-size: cover;
+    background-size: cover;
+    position: relative;
+	background-image:url(images/FotorCreated2.jpg);}
+.hero-text{
+	clear: left;
+	text-align: center;
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 }
 
@@ -150,13 +150,25 @@ h4{
 	
 }
 
-footer {
-	clear:both;
-	margin: auto
+footer, #gl {
+	clear:left;
+
+
+   width: 100%;
+   text-align: center;
+	
 }
 
 footer li{
 	display: block
+}
+
+footer{
+	   position:absolute;
+   bottom:0;
+   width:100%;
+   height:200px;   /* Height of the footer */
+   background:#6cf;
 }
 
 
@@ -166,6 +178,7 @@ p{
 
 .list li{
 	list-style-type: square;
+	text-align: justify
 }
 
 .col-img-left img{
@@ -233,6 +246,7 @@ tr:hover {background-color:#f5f5f5;}
 .p-2-col{
 	width:50%;
 	
+	
 }
 
 #left {
@@ -241,4 +255,14 @@ tr:hover {background-color:#f5f5f5;}
 
 #right p{
 	margin-left: 50px
+}
+
+.container{
+	margin:100px;
+
+}
+
+.container p{
+	clear:both;
+	text-align: center
 }
