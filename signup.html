@@ -8,16 +8,14 @@
 
 <body>
 	<header>
-		<img src="images/logo.png" alt="" width="91" height="66" style="float:left">
-		
-	
+		<img src="images/logo.png" alt="" width="91" height="66" style="float:left">		
 </header>
 		<nav>
 			<ul>
 			  <li><a href="index.html">Home</a></li>
 				<li class="active"><a href="signup.html">Party sign-up</a></li>
-				<li><a href="party-guidelines.html">PartGuidelines</a></li>			
-				<li><a href="price.html">2nd-hand costumes</a></li>			
+				<li><a href="party-guidelines.html">Party Guidelines</a></li>			
+				<li><a href="2nd hand price.html">2nd-hand costumes</a></li>			
 				<li><a href="contact.html">Contacts</a></li>
 				<li><a href="announcement.html">Promotions</a></li>
 				<li><a href="links.html">Resources</a></li>
@@ -27,14 +25,30 @@
 
 	<div class="herobox normal" style="background-image: url(images/fair5.jpg)">
 	<div class="hero-text"><h1>Party Sign up</h1></div></div>
-    <div class="container">
+    <div class="container sign-up">
 		
-          <p>Patrons can register to come to a party by <a href="mailto:cossieplay@gmail.com?Subject=Party%20register" target="_top" style="text-decoration: underline">emailing us</a>. they should include</p>
-          <ol>
-            <li>Contact person name</li>
-            <li>Phone number</li>
-            <li>How many people are coming</li>
-  </ol>
+          <h2>Patrons can register to come to a party by emailing us</h2>
+		<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+	  
+	  <label for="email">Email address</label>
+	  <input type="text" id="email" name="lastname" placeholder="Your email...">
+	  
+	  <label for="email">Phone number</label>
+	  <input type="text" id="phone" name="phone" placeholder="Your phone number...">
+
+    <label for="people">Number of people</label>
+	  <input type="text" id="people" name="people" placeholder="Number of people..">
+
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
 </div>
 	<footer>
 		<ul>
